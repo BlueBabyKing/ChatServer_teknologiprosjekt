@@ -81,7 +81,7 @@ public class Client {
         String ip = scanner.nextLine();
         System.out.println("Enter Username");
         String username = scanner.nextLine();
-        Socket socket = new Socket (ip, 1234);
+        Socket socket = new Socket (ip, 2222);
         Client client = new Client(socket, username);
         client.listenForMessage();
         client.sendMessage();
